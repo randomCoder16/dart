@@ -4,6 +4,8 @@ void main(){
   List<int> divisors = [];
   stdout.write("Enter a number: ");
   String? numberS = stdin.readLineSync();
+
+  // int counter = 0;
   
   try {
     if (numberS != null && numberS.isNotEmpty) {
@@ -14,9 +16,13 @@ void main(){
         if(new_divisor == 0) {
           divisors.add(x);
         }
+        // counter ++;
       }
 
+      // divisors.add(number);
+
       print("The Divisors of ${numberS} are ${divisors}");
+      // print("counter: $counter");
     }
     
   } catch (e) {
