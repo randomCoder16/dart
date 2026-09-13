@@ -9,16 +9,18 @@ void main(){
     if (numberS != null && numberS.isNotEmpty) {
       int number = int.parse(numberS);
       
-      for (int x = 0; x <= number; ++x) {
+      for (int x = 1; x <= (number + 1); ++x) {
         int new_divisor = number % x;
         if(new_divisor == 0) {
-          divisors.add(new_divisor);
+          divisors.add(x);
         }
       }
+
+      print("The Divisors of ${numberS} are ${divisors}");
     }
     
   } catch (e) {
-    print("An error occured!");
+    print("An error occured! ${e}");
     exit(1);
   }
 }
