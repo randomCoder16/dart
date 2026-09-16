@@ -1,3 +1,5 @@
+// capture user input and perfom actions
+
 import 'dart:io';
 
 void main(){
